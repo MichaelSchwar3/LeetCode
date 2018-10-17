@@ -19,6 +19,6 @@ def two_sum(nums, target)
         hash[int]= i
     end
     nums.each_with_index do |int, i|
-       return [i,hash[target-int]] if hash[target-int]
+       return [i,hash[target-int]] if hash[target-int] && hash[target-int] != i
     end
 end
